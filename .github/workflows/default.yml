@@ -37,7 +37,7 @@ jobs:
         with:
           name: last-built-artifact
           path: |
-            app
+            dist
           retention-days: 1
   
   docker:
