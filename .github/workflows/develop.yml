@@ -58,3 +58,17 @@ jobs:
 
       - name: Push Docker Image
         run: docker push ghcr.io/lotostudio/financial-web:develop
+  
+  deploy:
+    runs-on: ubuntu-latest
+    needs: docker
+    environment: dev
+
+    steps:
+      - name: Run Deploy Script
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.PRIVATE_KEY }}
+          script: ./deploy_financial_web_dev.sh
