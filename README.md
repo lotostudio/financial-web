@@ -1,4 +1,4 @@
-# financial-web
+# financial-web ![develop](https://github.com/lotostudio/financial-web/actions/workflows/develop.yml/badge.svg)
 
 ## Project setup
 ```

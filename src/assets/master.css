@@ -1,0 +1,110 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Mulish-Regular';
+}
+
+@font-face {
+  font-family: Mulish-Bold;
+  src: url('./fonts/Mulish-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Mulish-Medium;
+  src: url('./fonts/Mulish-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Mulish-Regular;
+  src: url('./fonts/Mulish-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Mulish-Light;
+  src: url('./fonts/Mulish-Light.ttf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* typography */
+.header-title{
+  font-family: 'Mulish-Medium', sans-serif;
+  font-size: 24px;
+  line-height: 38px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* typography */
+
+
+.fin-auth-form-holder{
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.fin-input-field{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.fin-input-field label{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  color: #35A65B;
+}
+
+.fin-input-field input{
+  background: #FFFFFF;
+  border: 3px solid #1C9444;
+  box-sizing: border-box;
+  padding: 16px;
+  outline: none;
+}
+
+.fin-input-field input::placeholder{
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.fin-group-btn{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.fin-primary-btn{
+  padding: 16px;
+  background: #8EE88C;
+  border: none;
+  outline: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 24px;
+}
+
+.fin-link-btn{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  color: #35A65B;
+}
+
+.fin-error-message{
+  color: red;
+  margin: 16px 0;
+}
